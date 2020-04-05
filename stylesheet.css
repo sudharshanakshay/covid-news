@@ -22,8 +22,7 @@ h1{
     text-shadow: 2px 2px red;
 }
 div.gallery{
-    margin: 30px;
-    margin-left: 90px;
+    margin: 20px;
     border:1px solid #ccc;
     float:left; 
     max-height: 260px;
@@ -48,7 +47,7 @@ div.gallery img{
 
 .stay_home{
       margin-top: 30px;
-      margin-left: 27%;
+      
   }
 
 .details{
