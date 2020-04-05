@@ -22,12 +22,12 @@ h1{
     text-shadow: 2px 2px red;
 }
 div.gallery{
-    margin: 15px;
+    margin: 30px;
+    margin-left: 90px;
     border:1px solid #ccc;
-    float:left;
-
-    width: 450px;
-    height: 250px;
+    float:left; 
+    max-height: 260px;
+    max-width: 560px;
 }
 div.gallery:hover{
     border: 1px solid #777;
@@ -35,6 +35,8 @@ div.gallery:hover{
 div.gallery img{
     width: 100%;
     height: auto;
+    max-height: 250px;
+    max-width: 550px;   
 }
 
 .center {
@@ -44,11 +46,12 @@ div.gallery img{
     padding: 10px;
   }
 
-  .stay_home{
+.stay_home{
       margin-top: 30px;
       margin-left: 27%;
   }
 
-.det{
-    margin: 50px;
+.details{
+    margin-left: 50px;
+    margin-right: 200px;
 }  
