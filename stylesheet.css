@@ -21,7 +21,23 @@ div {
 h1{
     text-shadow: 2px 2px red;
 }
-
+div.gallery{
+    margin: 20px;
+    border:1px solid #ccc;
+    float:left; 
+    max-height: 260px;
+    max-width: 560px;
+    
+}
+div.gallery:hover{
+    border: 1px solid #777;
+}
+div.gallery img{
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    max-width: 550px;   
+}
 
 .center {
     margin: auto;
@@ -30,27 +46,28 @@ h1{
     padding: 10px;
   }
 
-.stay_home{
-      margin-top: 30px;
+#stay_home{
+      margin-top: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
       
   }
 
 .details{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: auto
+    margin-right: auto;
 }  
 
 #img-center{
     width: 430px;
     height: 250;
-    
+    margin-right: auto;
+    margin-left: auto;
 }
-.img-center{
-    border:1px gray;
-    margin: 20px;
-    
-}
-
-img:hover{
-    border:1px solid gray;
+#banner{
+    opacity: 0.95;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
