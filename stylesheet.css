@@ -7,8 +7,8 @@ div {
 }
 
 .content{
-    margin-right: 30px;
-    margin-left: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
     border: 10px black;  
     padding: 5px;
     
@@ -21,22 +21,7 @@ div {
 h1{
     text-shadow: 2px 2px red;
 }
-div.gallery{
-    margin: 20px;
-    border:1px solid #ccc;
-    float:left; 
-    max-height: 260px;
-    max-width: 560px;
-}
-div.gallery:hover{
-    border: 1px solid #777;
-}
-div.gallery img{
-    width: 100%;
-    height: auto;
-    max-height: 250px;
-    max-width: 550px;   
-}
+
 
 .center {
     margin: auto;
@@ -51,6 +36,21 @@ div.gallery img{
   }
 
 .details{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }  
+
+#img-center{
+    width: 430px;
+    height: 250;
+    
+}
+.img-center{
+    border:1px gray;
+    margin: 20px;
+    
+}
+
+img:hover{
+    border:1px solid gray;
+}
