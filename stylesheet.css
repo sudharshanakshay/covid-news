@@ -51,13 +51,14 @@ div.gallery img{
       margin-left: auto;
       margin-right: auto;
       margin-bottom: auto;
+      max-width: 100%;
+      height: auto;
       
   }
 
 .details{
     margin-left: auto
-    margin-right: auto;
-}  
+   }  
 
 #img-center{
     width: 430px;
@@ -70,4 +71,13 @@ div.gallery img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.statistics{
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+}
+#AB:hover{
+    color: #E52D2D;
 }
