@@ -1,0 +1,100 @@
+
+
+
+/*style for reponsive image in Home page*/
+#stay_home{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    max-width: 100%;
+    height: auto;
+    
+}
+/*covid-19 banner image in the very first*/
+#banner{
+    opacity: 0.95;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*spacing for home page image*/
+.spacing{
+    margin-top: 20px;
+}
+div {
+    border: 3px #E52D2D;
+    padding: 5px;
+}
+
+/*style for evil_china page*/
+.content{
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 10px black;  
+    padding: 5px;
+    
+}
+/*style for two images in 'evil-china' [wuhan wet market & wuhan medical center]*/ 
+.image_01{
+    float: right;
+    clear: both;
+}
+/* style for 'covid-19' heading in 'evil-china' page*/
+h1{
+    text-shadow: 2px 2px red;
+}
+/* image gallery*/
+div.gallery{
+    margin: 20px;
+    border:1px solid #ccc;
+    float:left; 
+    max-height: 260px;
+    max-width: 560px;
+    
+}
+div.gallery:hover{
+    border: 1px solid #777;
+}
+div.gallery img{
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    max-width: 550px;   
+}
+/*only for text below the image gallery*/
+.center {
+    margin: auto;
+    width: 90%;
+    border: 3px black;
+    padding: 10px;
+  }
+/*style for all detail page [contation information table]*/
+.details{
+    margin-left: auto
+}
+
+/*css next/previous botton */
+a {
+    text-decoration: none;
+    display: inline-flex;
+    padding: 8px 16px;
+}
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+.next {
+    background-color: #4CAF50;
+    color: white;
+}
+.round {
+    border-radius: 50%;
+}
+.botton {
+    border-radius: 50%;
+}
