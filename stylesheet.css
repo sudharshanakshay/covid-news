@@ -1,3 +1,24 @@
+
+
+
+/*style for reponsive image in Home page*/
+#stay_home{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    max-width: 100%;
+    height: auto;
+    
+}
+/*covid-19 banner image in the very first*/
+#banner{
+    opacity: 0.95;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*spacing for home page image*/
 .spacing{
     margin-top: 20px;
 }
@@ -6,6 +27,7 @@ div {
     padding: 5px;
 }
 
+/*style for evil_china page*/
 .content{
     margin-right: 20px;
     margin-left: 20px;
@@ -13,14 +35,16 @@ div {
     padding: 5px;
     
 }
-
+/*style for two images in 'evil-china' [wuhan wet market & wuhan medical center]*/ 
 .image_01{
     float: right;
     clear: both;
 }
+/* style for 'covid-19' heading in 'evil-china' page*/
 h1{
     text-shadow: 2px 2px red;
 }
+/* image gallery*/
 div.gallery{
     margin: 20px;
     border:1px solid #ccc;
@@ -38,46 +62,14 @@ div.gallery img{
     max-height: 250px;
     max-width: 550px;   
 }
-
+/*only for text below the image gallery*/
 .center {
     margin: auto;
     width: 90%;
     border: 3px black;
     padding: 10px;
   }
-
-#stay_home{
-      margin-top: auto;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: auto;
-      max-width: 100%;
-      height: auto;
-      
-  }
-
+/*style for all detail page [contation information table]*/
 .details{
     margin-left: auto
-   }  
-
-#img-center{
-    width: 430px;
-    height: 250;
-    margin-right: auto;
-    margin-left: auto;
-}
-#banner{
-    opacity: 0.95;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.statistics{
-    width: 100%;
-    height: auto;
-    margin-left: 0px;
-}
-#AB:hover{
-    color: #E52D2D;
 }
