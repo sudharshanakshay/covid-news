@@ -1,162 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-</head>
+<title>evil_china</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */ 
+.prev, .next {
+  cursor: pointer;
+  position: left corner;
+  top: 50%;
+  width: -100%;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: right corner;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+</style>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">HOME</a>
-    <a class="navbar-brand" href="detail-pages/today.html">COVID-19 INDIA</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="evil_china.html">Evil China<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="https://www.mohfw.gov.in/ ">INDIA</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="main_content.html">India Current Status</a>
-        </li>
-      </ul>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="dashboard.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">DASHBOARD</a>
+    <a href="detail-pages/today.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">COVID-19 INDIA</a>
+  </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="detail-pages/today.html" class="w3-bar-item w3-button w3-padding-large">COVID-19 INDIA</a>
+    <a href="dashboard.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">DASHBOARD</a>
+    <a href="evil_china.html" class="w3-bar-item w3-button w3-padding-large">EPIDEMIC</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-black w3-center w3-opacity" style="padding:128px 16px">
+  <h5 class="w3-margin w3-jumbo">Who brought on coronavirus pandemic? China on prowl to deflect blame</h5>
+  <img src="images/evil-china/circle-cropped (3).png"w3-padding-64 w3-text-red w3-margin-left corner width="15%">
+</header>
+
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>How China Will Emerge As The World’s Leading Economy!</h1>
+      <h5 class="w3-padding-32" > President Trump and Chinese President Xi Jinping attend a bilateral meeting on the sidelines of the G20 Summit in Osaka last June. The two leaders spoke by phone earlier this month. Since the coronavirus outbreak, China has let in some experts from the World Health Organization but has not yet allowed in a team from the U.S. Centers for Disease Control and Prevention.
+       How coronavirus started in the world is still a mystery, but this is for sure confirmed that it originated from China and has spread across the world, affecting the healthcare of the entire planet.</h5></div>
+    <div class="w3-third w3-center">
+      <img src="images/evil-china/trump.jpg"w3-padding-64 w3-text-red w3-margin-left corner width="90%">
     </div>
-  </nav>
-      <div class="spacing" style="font-weight:bold">
-        <h1><center>COVID-19</center></h1>
-      </div>
-      <div class="spacing">
-        <center><h3>How China Will Emerge As The World’s Leading Economy</h3></center>
-        <center><h3> Surpassing America With Monopoly In Entire Asia, Europe, Africa After Spreading Coronavirus Epidemic in World</h3></center>
-      </div>
-        <img  src="images/banner.png" class="img-thumbnail" id="banner">
-            <br><br>
-      <div class="content">
+  </div>
+</div>
 
-       
-        <div class="gallery">
-          <img src="images/us_002.jpeg" alt="us-president" >
-        </div>
-        <div class="gallery">
-          <img src="images/china_001.jpeg" alt="china_president">
-        </div>
-     
-        
-        <br><br><br/><br/><br/><br/><br/><br/><br>
-        <br/><br><br>
-        <div class="center">
-          <p>
-            President Trump and Chinese President Xi Jinping attend a bilateral meeting on the sidelines of the G20 Summit in Osaka last June. The two leaders spoke by phone earlier this month. Since the coronavirus outbreak, China has let in some experts from the World Health Organization but has not yet allowed in a team from the U.S. Centers for Disease Control and Prevention.
-          </p>
-        </div><br><br>
-          <p>
-            <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-            How coronavirus started in the world is still a mystery, but this is for sure confirmed that it originated from China and has spread across the world, affecting the healthcare of the entire planet.
-            </span>
-          </p>
-         
-            <br>
-            <span style="font-family: 'times new roman', times, serif; font-size: 23px;">
-              <strong>Wet market of Wuhan</strong>
-              <br>
-              <br> 
-            </span>
-            <div class="image_01">
-              <img src="https://thehill.com/sites/default/files/ca_hongkong_wetmarket_010519gettyimages.jpg" alt="ca_hongkong_wetmarket_010519gettyimages" class="img-thumbnail" width="500px"; >
-              
-            </div>
-            <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-              One theory that goes around is that coronavirus started from the wet markets of Wuhan and it has spread among humans from the consumption of the meat of bats and marsupials sold in the wet market of Wuhan city of China. The Chinese government deliberately suppressed the news of the spread of the epidemic and let it spread to the whole world and didnt informed other countries for the issue so that, they prepare themself. Surprisingly the wet markets never got shut down and are still operational, the only difference that has come since the coronavirus epidemic is that, now there are guards in and around the market and they are not letting anyone click the pictures
-              </span>
-         <p>
-          <br/>
-          <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-           Another theory that goes around is that coronavirus is a lab virus especially designed and developed by the Wuhan medical center in china which was being prepared by the Chinese authorities to be used in the war as biochemical warfare but was accidentally leaked out.
-          </span>
-          <br/>
-          <br/>
-          <span style="font-family: 'Times New Roman', Times, serif; font-size: 23px;">
-          <strong>Wuhan Medical Center</strong>
-          </span>
-          <br>
-          <div class="image_01"><img src="images/research _center.jpeg" alt="research_center" class="img-thumbnail" width="500px" height="306px"></div>
-          <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-           One more theory that exists is that Chinese developed this virus in their labs but not to be used as warfare but as a trigger to boost their economy and it was intentionally released to infect the whole world. The virus was released with proper preparations and in a very controlled way that this will affect the whole world but will not damage much in china.
-          </span>
-         </p>
-         <p>
-          <br>
-          <br/>
-          <br/>
-          <span style="font-family:'Times New Roman', Times, serif; font-size:23px;">
-          <strong>Matter of Profit to China</strong>
-          </span>
-          <br>
-          <br>
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <img src ="images/evil-china/ca_hongkong_wetmarket_010519gettyimages.jpg" w3-padding-64 w3-text-red w3-margin-right corner width="90%">
 
-          <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-           The deaths and infections that happened in china were just the results of trials which the chinese government wanted to do before spreading it across the world. Even the deaths of those Chinese people have been a matter of profit for the china, the virus intensity, infectious nature was thoroughly studied and tested during the internal spread, the old people who died in china were on pensions, so now the Chinese government do not have to pay further pension and also no one can blame the china for its intentional worldwide spreading as Chinese can openly say, that they also lost 3000 lives in their own country.
-          </span>
-          <br/>
-          <br/>
-          <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-           No matter what, but in any case, those 3000 people in china became the scapegoat of the devil nature and character of the chinese government and the world will never come to know about the reality due to the control of Chinese government over the media.
-          </span>
-          <br/>
-          <br/>
-          <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-           <strong>
-            Let’s see at the present scenario
-           </strong>
-          </span>
-          <br/>
-          <br/>
-          <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-           Today the fact is that, coronavirus originated from china and has spread to 195+ countries in the world infecting 799,723 people across the globe and resulting in 38721 deaths all over the world.
-          </span>
-          <br/>
-          <br/>
-          <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-           The worst affected countries are Italy, USA, Spain, Germany, France, Iran, UK, Switzerland, Netherlands.
-          </span>
-          <br/>
-          <br/>
-          <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-           Now one thing which is common among these countries worst hit by coronavirus is that, they are one of the leading and most powerful economies of the world.
-          </span>
-          <br/>
-          <br/>
-          <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-           Another common thing is that, these countries went into complete isolation and total lockdown of the entire citizens of the country with the absolute shutdown of the business operations and work, which means a great loss to the nation in terms of economy, growth and the result is in front of all of us, the share market crash of major sensex around the world including NASDAQ, Dow Jones, New York Stock Exchange, London Stock Exchange, Tokyo Stock Exchange, National Stock Exchange(India), Bombay Stock Exchange(India), HongKong Stock Exchange, EuroNext, Toronto Stock Exchange.
-          </span>
-          <br/>
-          <br/>
-          <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-           One thing which was and which is still very surprising is that the origin country or so called the birthplace of the coronavirus epidemic didn’t had any effect on the share market of two major stock exchanges of mainland china i.e Shanghai Stock Exchange, Shenzhen Stock Exchange.
-          </span>
-          <br/>
-          <br/>
-          <span style="font-family: 'times new roman', times, serif; font-size: 19px;">
-           Although which ever country the coronavirus has spread to, it affected almost every state, every city of that country but the shocking surprise is that, coronavirus didn’t infected anyone in major financial regions of china i.e Shanghai, Beijing, Tianjin, Shenzhen, Guangzhou, Chengdu.
-          </span>
-         </p>
-         <p>
-          <br/>
-          <br/>
-      </div>
-      
-      
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Wuhan wetmarket</h1>
+      <h5 class="w3-padding-32">  One theory that goes around is that coronavirus started from the wet markets of Wuhan and it has spread among humans from the consumption of the meat of bats and marsupials sold in the wet market of Wuhan city of China. The Chinese government deliberately suppressed the news of the spread of the epidemic and let it spread to the whole world and didnt informed other countries for the issue so that, they prepare themself. Surprisingly the wet markets never got shut down and are still operational, the only difference that has come since the coronavirus epidemic is that, now there are guards in and around the market and they are not letting anyone click the pictures
+       released to infect the whole world. The virus was released with proper preparations and in a very controlled way that this will affect the whole world but will not damage much in china.</h5>
+    </div>
+  </div>
+</div>
+<div class="w3-container w3-black w3-center w3-padding-64">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+  <img src ="images/evil-china/research _center.jpeg" w3-padding-64 w3-text-red w3-margin-right corner width="90%">
+  </div>
+  <div class="w3-twothird">
+    <h1>Wuhan Medical Center</h1>
+    <h5 class="w3-padding-32">  One more theory that exists is that Chinese developed this virus in their labs but not to be used as warfare but as a trigger to boost their economy and it was intentionally released to infect the whole world. The virus was released with proper preparations and in a very controlled way that this will affect the whole world but will not damage much in china.
+
+The deaths and infections that happened in china were just the results of trials which the chinese government wanted to do before spreading it across the world. Even the deaths of those Chinese people have been a matter of profit for the china, the virus intensity, infectious nature was thoroughly studied and tested during the internal spread, the old people who died in china were on pensions, so now the Chinese government do not have to pay further pension and also no one can blame the china for its intentional worldwide spreading as Chinese can openly say, that they also lost 3000 lives in their own country.
+      </h5></div>
+</div>
+</div>
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+      <h1>
+Let’s see at the present scenario </h1>
+      <h5 class="w3-padding-32" >
+Today the fact is that, coronavirus originated from china and has spread to 195+ countries in the world infecting 799,723 people across the globe and resulting in 38721 deaths all over the world.
+
+The worst affected countries are Italy, USA, Spain, Germany, France, Iran, UK, Switzerland, Netherlands.
+
+Now one thing which is common among these countries worst hit by coronavirus is that, they are one of the leading and most powerful economies of the world.
+
+Another common thing is that, these countries went into complete isolation and total lockdown of the entire citizens of the country with the absolute shutdown of the business operations and work, which means a great loss to the nation in terms of economy, growth and the result is in front of all of us, the share market crash of major sensex around the world including NASDAQ, Dow Jones, New York Stock Exchange, London Stock Exchange, Tokyo Stock Exchange, National Stock Exchange(India), Bombay Stock Exchange(India), HongKong Stock Exchange, EuroNext, Toronto Stock Exchange.
+
+One thing which was and which is still very surprising is that the origin country or so called the birthplace of the coronavirus epidemic didn’t had any effect on the share market of two major stock exchanges of mainland china i.e Shanghai Stock Exchange, Shenzhen Stock Exchange.
+
+Although which ever country the coronavirus has spread to, it affected almost every state, every city of that country but the shocking surprise is that, coronavirus didn’t infected anyone in major financial regions of china i.e Shanghai, Beijing, Tianjin, Shenzhen, Guangzhou, Chengdu.
+
+</h5></div>
+
+    </div>
+
+
+
 </body>
-</html> 
+</html>
+
+​
